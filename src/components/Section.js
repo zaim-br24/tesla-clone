@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade';
 
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundIamge}> 
       <ItemText>
+      <Fade bottom>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
+      </Fade>
       </ItemText>
       <Buttons>
+      <Fade bottom>
           <ButtonGroup>
             <LeftButton>
               {props.leftBtnText}
@@ -19,6 +23,7 @@ function Section(props) {
             </RightButton>
             }
           </ButtonGroup>
+      </Fade>
           <DownArrow src="/images/down-arrow.svg" />
       </Buttons>    
     </Wrap>
@@ -27,6 +32,8 @@ function Section(props) {
 
 export default Section
 
+
+// css styled components
 const Wrap = styled.div`
     height:100vh;
     width:100vw;
@@ -85,5 +92,4 @@ const DownArrow = styled.img`
 
 `
 const Buttons = styled.div`
-
-`;
+`

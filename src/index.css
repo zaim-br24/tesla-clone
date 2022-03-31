@@ -3,17 +3,19 @@
   padding: 0;
   box-sizing:border-box;
   font-family: 'Rubik', sans-serif;  
-  color: #333333f3;
+  color: rgb(23, 26, 32);
+
 
 }
 
 body{
   width: 100%;
   overflow-x:hidden;
- 
-
 }
 
+a{
+  text-decoration: none;
+}
 
 @keyframes animateDown{
   0%, 20%, 50%, 80%, 100%{
